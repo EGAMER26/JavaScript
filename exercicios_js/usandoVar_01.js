@@ -17,4 +17,4 @@ function teste() {
 }
 teste()
 
-console.log(locall)
+console.log(localll)
