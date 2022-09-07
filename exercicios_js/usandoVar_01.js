@@ -12,9 +12,9 @@
 console.log(sera)
 
 function teste() {
-  var local = 123
-  console.log(local)
+  var locall = 123
+  console.log(locall)
 }
 teste()
 
-console.log(local)
+console.log(locall)
