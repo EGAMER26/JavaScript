@@ -3,7 +3,7 @@ const imprimirResultado = function (nota) {
         case 10:
         case 9:
             console.log('Quadro de honra')
-            break
+            break // Utulizado para se a sequencia for execultada, o código sair 
         case 7: case 8:
             console.log('Aprovado')
             break
