@@ -1,3 +1,6 @@
+// usar a estrutura while quando c tem um quantidade indeterminada de vezes o laço de repetição
+
+
 function getInteiroAleatorioEntre(min, max) {
     const valor = Math.random() * (max - min) + min
     return Math.floor(valor)
