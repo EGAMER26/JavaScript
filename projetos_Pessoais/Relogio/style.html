@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(60deg, rgb(0, 0, 0), rgba(255, 0, 0, 1)) ;
+        }
+        .box,
+        .box2,
+        .box3 {
+            font-size: 8.4rem;
+            text-align: center;
+
+            
+            /* font-family: 'Noto Sans JP', sans-serif; */
+            /* font-family: 'Indie Flower', cursive; */
+            font-family: 'Passion One', cursive;
+
+            font-weight: 500;
+        }
+        .box {
+            width: 10rem;
+            height: 10rem;
+
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 38%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 100%;
+
+            box-shadow: 0 0 1em rgb(0, 0, 0), inset 0 0 1em rgba(0, 0, 0, 0.37) ;
+        }
+        .box2 {
+           width: 10rem;
+            height: 10rem;
+
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 100%;
+
+
+            box-shadow: 0 0 1em rgb(0, 0, 0), inset 0 0 1em rgba(0, 0, 0, 0.37) ;
+        }
+        .box3 {
+            width: 10rem;
+            height: 10rem;
+
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 100%;
+
+
+            box-shadow: 0 0 1em 5px rgb(0, 0, 0), inset 0 0 1em rgba(0, 0, 0, 0.37) ;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="hora">
+        </div>
+    </div>
+    <div class="box2">
+        <div id="min">
+        </div>
+    </div>
+    <div class="box3">
+        <div id="seg">
+        </div>
+    </div>
+    <script>
+        function relogio() {
+            let data = new Date();
+            let min = data.getMinutes();
+            let sec = data.getSeconds();
+            let totalTime = hr + ":" + min + ":" + sec;
+
+            var tempo = window.document.getElementById("relogio");
+            tempo.innerHTML = totalTime;
+        }
+        function hr() {
+            let data = new Date();
+            let hr = data.getHours();
+
+            var tempo = window.document.getElementById("hora");
+            tempo.innerHTML = hr;
+
+
+        }
+        function min() {
+            let data = new Date();
+            let hr = data.getMinutes();
+
+            var tempo = window.document.getElementById("min");
+            tempo.innerHTML = hr;
+
+
+        }
+        function sec() {
+            let data = new Date();
+            let hr = data.getSeconds();
+
+            var tempo = window.document.getElementById("seg");
+            tempo.innerHTML = hr;
+
+
+        }
+        setInterval(hr, 500)
+        setInterval(min, 500)
+        setInterval(sec, 500)
+    </script>
+</body>
+</html>
