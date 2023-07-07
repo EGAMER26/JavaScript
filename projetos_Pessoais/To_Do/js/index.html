@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To_Do</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Js -->
     <script src="js/scripts.js" defer></script>
     <!-- Font awesome -->
@@ -47,7 +47,40 @@
                 </form>
             </div>
             <div id="filter">
-                
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="Done">Feitos</option>
+                    <option value="To_Do">A fazer</option>
+                     
+                </select>
+
+            </div>
+        </div>
+        <div id="todo_list">
+            <div class="todo">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finish_todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit_todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove_todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Dar a bundinha</h3>
+                <button class="finish_todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit_todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove_todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
     </div>
