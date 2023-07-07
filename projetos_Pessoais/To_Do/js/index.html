@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Js -->
+    <script src="js/scripts.js" defer></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="todo_container">
+        <header>
+            <h1>Todo Avançado</h1>
+        </header>
+        <form action="" class="todo_form">
+            <p>Adicione a sua tarefa:</p>
+            <div class="from_control">
+                <input type="text" name="" id="todo_input" placeholder="o que você via fazer?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form action="" class="edit_form">
+            <p>Edite a sua Tarefa:  </p>
+            <div class="form_control">
+                <input type="text" name="" id="edit_input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel_edit_btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div class="search">
+                <h4>Pesquisar:</h4>
+                <form action="">
+                    <input type="text" id="search_input" placeholder="Buscar"></input>
+                    <button id="erase_button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
