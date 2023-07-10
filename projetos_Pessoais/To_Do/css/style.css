@@ -58,3 +58,28 @@ input, select {
     padding: 1.5rem;
     border-radius: 2rem;
 }
+.todo_container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid white;
+}
+.todo_form, #edit_form {
+
+    padding: 1rem;
+    border-bottom: 1px solid white; 
+}
+.todo_form p, 
+#edit_form p {
+margin-bottom: .5rem;
+font-weight: bold;/
+}
+.form_control {
+    display: flex;
+}
+.form_control input {
+    margin-right: .4rem;
+}
+#cancel_edit_btn {
+    margin-top: 1rem;
+}
+
