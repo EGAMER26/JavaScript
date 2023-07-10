@@ -134,6 +134,9 @@ font-weight: bold;/
 .todo button {
     margin-left: 0.4rem;
 }
+#todo_input {
+    width: 100%;
+}
 .done {
     background-color: rgba(0, 0, 0, 0.581);
 }
