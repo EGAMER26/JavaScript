@@ -120,13 +120,19 @@ font-weight: bold;/
 }
 
 /* Todo List */
+#todo_list {
+    margin-top: 4rem;
+}
 .todo {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 1rem;
     transition: .3s;
+    
 }
 .todo h3 {
     flex: 1;
